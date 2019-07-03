@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ApplicationController {
 
-  @Value(value = "${application.util.message}")
+  @Value(value = "${spring.datasource.username}")
   private String message;
   
   @RequestMapping(value = "/", method = RequestMethod.GET)
